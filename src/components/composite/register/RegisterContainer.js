@@ -39,9 +39,8 @@ class RegisterContainer extends Component {
         break;
 
       case "passwordConfirm":
-        errors[name] = RegUtil.validateFormat(value, name)
-          ? ""
-          : msg.error.valid[name].different;
+        errors[name] =
+          value !== this.state.password ? msg.error.valid[name].different : "";
         break;
       default:
         break;

@@ -10,7 +10,7 @@ class Register extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <h3>Register</h3>
         <form>
           <input
@@ -20,7 +20,7 @@ class Register extends Component {
             onChange={this.state.handleChange}
           />
           {this.state.errors.email ? (
-            <div>{this.state.errors.email}</div>
+            <div className="error">{this.state.errors.email}</div>
           ) : null}
           <br />
           <input
@@ -29,7 +29,9 @@ class Register extends Component {
             placeholder={msg.placeholder.register.name}
             onChange={this.state.handleChange}
           />
-          {this.state.errors.name ? <div>{this.state.errors.name}</div> : null}
+          {this.state.errors.name ? (
+            <div className="error">{this.state.errors.name}</div>
+          ) : null}
           <br />
           <input
             type="text"
@@ -38,7 +40,7 @@ class Register extends Component {
             onChange={this.state.handleChange}
           />
           {this.state.errors.password ? (
-            <div>{this.state.errors.password}</div>
+            <div className="error">{this.state.errors.password}</div>
           ) : null}
           <br />
           <input
@@ -48,11 +50,11 @@ class Register extends Component {
             onChange={this.state.handleChange}
           />
           {this.state.errors.passwordConfirm ? (
-            <div>{this.state.errors.passwordConfirm}</div>
+            <div className="error">{this.state.errors.passwordConfirm}</div>
           ) : null}
           <br />
         </form>
-      </>
+      </div>
     );
   }
 }

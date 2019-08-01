@@ -1,14 +1,16 @@
 import React from "react";
+
 const HMF = props => {
   return (
     <>
-      <header style={{ height: "50px", backgroundColor: "red" }}>
-        {props.headerComponent}
-      </header>
-      <main>{props.mainComponent}</main>
-      <footer style={{ height: "50px", backgroundColor: "yellow" }}>
-        {props.footerComponent}
-      </footer>
+      <main bp="grid" style={{ backgroundColor: "pink", height: "100%" }}>
+        <div bp="6 offset-4" style={{ backgroundColor: "purple" }}>
+          <div bp="grid">
+            <div bp="6 offset-4">{props.mainComponent}</div>
+          </div>
+        </div>
+      </main>
+      <footer>{props.footerComponent}</footer>
     </>
   );
 };

@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import Register from "../../components/composite/register/RegisterContainer";
-import HSMF from "../../components/layout/composite/HSMF";
+import HMF from "../../components/layout/composite/HMF";
+
+import Footer from "../../components/layout/unit/Footer";
+import Header from "../../components/layout/unit/Header";
 
 class RegisterPage extends Component {
   render() {
     return (
-      <HSMF
-        headerComponent={<div>헤더입니다.</div>}
+      <HMF
+        headerComponent={<Header />}
         mainComponent={<Register />}
-        footerComponent={<div>풋터입니다.</div>}
+        footerComponent={<Footer />}
       />
     );
   }

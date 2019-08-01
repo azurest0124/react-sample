@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+}
+
+footer {
+  height: 50px;
+  background-color: yellow;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h3,
+.white {
+  color: white;
+}
+
+.error {
+  color: yellow;
+}

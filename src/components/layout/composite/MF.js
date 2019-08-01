@@ -2,10 +2,8 @@ import React from "react";
 const MF = props => {
   return (
     <>
-      <main>{props.mainComponent}</main>
-      <footer style={{ height: "50px", backgroundColor: "yellow" }}>
-        {props.footerComponent}
-      </footer>
+      <main style={{ width: "100%" }}>{props.mainComponent}</main>
+      <footer>{props.footerComponent}</footer>
     </>
   );
 };
