@@ -1,10 +1,7 @@
 import React from "react";
-const HMF = props => {
+const MF = props => {
   return (
     <>
-      <header style={{ height: "50px", backgroundColor: "red" }}>
-        {props.headerComponent}
-      </header>
       <main>{props.mainComponent}</main>
       <footer style={{ height: "50px", backgroundColor: "yellow" }}>
         {props.footerComponent}
@@ -13,4 +10,4 @@ const HMF = props => {
   );
 };
 
-export default HMF;
+export default MF;
