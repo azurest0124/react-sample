@@ -10,8 +10,8 @@ setOptions({
   hierarchyRootSeparator: /\|/
 });
 
-flatPickr;
-inputs;
-sample;
-numberInput;
-register;
+flatPickr();
+inputs();
+sample();
+numberInput();
+register();

@@ -12,7 +12,7 @@ class Register extends Component {
     return (
       <div>
         <h3>Register</h3>
-        <form>
+        <form onSubmit={this.state.handleSubmit}>
           <input
             type="text"
             name="email"
@@ -53,6 +53,7 @@ class Register extends Component {
             <div className="error">{this.state.errors.passwordConfirm}</div>
           ) : null}
           <br />
+          <button type="submit">SUBMIT</button>
         </form>
       </div>
     );
