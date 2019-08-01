@@ -1,12 +1,9 @@
 import React from "react";
-import FlatPickr from "./components/unit/FlatPickr";
-import NumberFormat from "react-number-format";
+import Register from "./pages/register/Register";
 function App() {
   return (
     <>
-      <FlatPickr />
-      <br />
-      <NumberFormat />
+      <Register />
     </>
   );
 }

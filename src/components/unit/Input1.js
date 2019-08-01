@@ -9,6 +9,7 @@ class Input extends Component {
       fields: { [props.field]: "" }
     };
   }
+
   render() {
     return (
       <div>

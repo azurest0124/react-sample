@@ -2,7 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
-import Input from "../../../src/components/unit/Input";
+import Input from "../../../src/components/unit/Input1";
 import RegUtil from "../../../src/util/RegExpUtil";
 import msg from "../../../src/util/msg";
 
