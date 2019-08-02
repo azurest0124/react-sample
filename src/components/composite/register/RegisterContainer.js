@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import RegUtil from "../../../util/RegExpUtil";
 import msg from "../../../util/msg";
 import Register from "../register/Register";
+import Axios from "axios";
 class RegisterContainer extends Component {
   constructor(props) {
     super(props);
@@ -88,23 +89,19 @@ class RegisterContainer extends Component {
       errors
     });
 
+    // https://tuhbm.github.io/2019/03/21/axios/
+    // https://github.com/axios/axios
     if (validated) {
-      fetch("http://localhost:4000/register", {
-        method: "post",
-        mode: "cors",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(fields)
+      Axios.post("http://localhost:4000/register", {
+        params: fields
       })
-        .then(function(response) {
-          return response.json();
+        .then(function(res) {
+          console.info(res.data);
         })
-        .then(function(data) {
-          console.info(data);
-        })
-        .catch(err => console.error(err));
+        .catch(err => {
+          console.error(err);
+          alert("server error");
+        });
     }
   };
 

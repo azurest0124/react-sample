@@ -24,3 +24,7 @@ h3,
 .error {
   color: yellow;
 }
+
+.no-underline {
+  text-decoration: none;
+}
