@@ -18,6 +18,9 @@ const Header = () => {
         <div>
           <Link to="/h_sm_f">페이지H_SM_F</Link>
         </div>
+        <div>
+          <Link to="/h_sms_f">페이지HSMSF</Link>
+        </div>
       </div>
     </div>
   );

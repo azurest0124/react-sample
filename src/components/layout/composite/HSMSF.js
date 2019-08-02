@@ -2,16 +2,19 @@ import React from "react";
 const HSMSF = props => {
   return (
     <>
-      <section style={{ height: "50px", backgroundColor: "green" }}>
-        {props.sisdeComponent}
-      </section>
+      <div bp="grid" style={{ height: "100%" }}>
+        <section bp="2" style={{ backgroundColor: "green" }}>
+          {props.leftSideComponent}
+        </section>
 
-      <main style={{ width: "100%" }}>{props.mainComponent}</main>
+        <main bp="8" style={{ backgroundColor: "purple", width: "100%" }}>
+          {props.mainComponent}
+        </main>
 
-      <section style={{ height: "50px", backgroundColor: "green" }}>
-        {props.sisdeComponent}
-      </section>
-
+        <section bp="2" style={{ backgroundColor: "green" }}>
+          {props.rightSideComponent}
+        </section>
+      </div>
       <footer>{props.footerComponent}</footer>
     </>
   );

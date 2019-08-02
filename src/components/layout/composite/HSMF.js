@@ -3,7 +3,6 @@ const HSMF = props => {
   return (
     <>
       <div bp="grid" style={{ height: "100%" }}>
-        {" "}
         <section bp="2" style={{ backgroundColor: "green" }}>
           {props.sideComponent}
         </section>

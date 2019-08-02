@@ -89,7 +89,22 @@ class RegisterContainer extends Component {
     });
 
     if (validated) {
-      alert("submit!!!");
+      fetch("http://localhost:4000/register", {
+        method: "post",
+        mode: "cors",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(fields)
+      })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          console.info(data);
+        })
+        .catch(err => console.error(err));
     }
   };
 

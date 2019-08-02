@@ -5,7 +5,7 @@ const HMSF = props => {
       <main style={{ width: "100%" }}>{props.mainComponent}</main>
 
       <section style={{ height: "50px", backgroundColor: "green" }}>
-        {props.sisdeComponent}
+        {props.sideComponent}
       </section>
 
       <footer>{props.footerComponent}</footer>
